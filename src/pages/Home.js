@@ -42,7 +42,7 @@ const Home = () => {
     return (
         <div className="timer">
         <div className="back">
-        <h1 className="head">We are soon online.</h1>
+        <h1 className="head">We are soon online</h1>
         <span id="days">{days}</span>
         <span>:</span>
         <span id="hours">{hours}</span>
