@@ -1,38 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.timer {
+  font-size: 150px;
+  font-family: "Zen Kurenaido", sans-serif;
+  margin-left: 0;
+  margin-top: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+span {
+  text-shadow: 2px 2px 5px rgb(29, 26, 26);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.head {
+  font-size: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttom {
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.back {
+  padding: 10px;
+}
+
+body {
+  text-align: center;
+  color: aliceblue;
+  background-image: url("./img/Cave\ -\ 45340.mp4");
+  background-repeat: no-repeat;
 }
