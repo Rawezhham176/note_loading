@@ -5,10 +5,10 @@
 }
 
 .timer {
-  font-size: 150px;
+  font-size: 15vw;
   font-family: "Zen Kurenaido", sans-serif;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 10%;
 }
 
