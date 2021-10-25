@@ -8,6 +8,7 @@
   font-size: 150px;
   font-family: "Zen Kurenaido", sans-serif;
   margin-left: 0;
+  margin-right: 0;
   margin-top: 10%;
 }
 
@@ -17,10 +18,12 @@ span {
 
 .head {
   font-size: 50px;
+  text-shadow: 2px 2px 5px rgb(29, 26, 26);
 }
 
 .buttom {
   font-size: 30px;
+  text-shadow: 2px 2px 5px rgb(29, 26, 26);
 }
 
 .back {
