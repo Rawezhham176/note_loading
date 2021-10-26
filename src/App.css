@@ -7,9 +7,12 @@
 .timer {
   font-size: 15vw;
   font-family: "Zen Kurenaido", sans-serif;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 10%;
+  background-color: none;
+  position: absolute;
+  color: white;
+  top: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 span {
@@ -19,11 +22,13 @@ span {
 .head {
   font-size: 50px;
   text-shadow: 2px 2px 5px rgb(29, 26, 26);
+  margin-bottom: -15px;
 }
 
 .buttom {
   font-size: 30px;
   text-shadow: 2px 2px 5px rgb(29, 26, 26);
+  margin-top: -15px;
 }
 
 .back {
@@ -33,7 +38,13 @@ span {
 body {
   text-align: center;
   font-family: "Zen Kurenaido", sans-serif;
-  color: aliceblue;
-  background-image: url("./img/lightbulb-ge55b82b56_1920.jpg");
-  background-repeat: no-repeat;
+}
+
+.video {
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
