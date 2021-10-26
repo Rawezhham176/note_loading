@@ -5,14 +5,10 @@
 }
 
 .timer {
-  font-size: 15vw;
+  font-size: 16vw;
   font-family: "Zen Kurenaido", sans-serif;
   background-color: none;
-  position: fixed;
   color: white;
-  top: 20%;
-  margin-left: 20%;
-  margin-right: 20%;
 }
 
 span {
@@ -20,19 +16,27 @@ span {
 }
 
 .head {
-  font-size: 50px;
+  font-size: 60px;
   text-shadow: 2px 2px 5px rgb(29, 26, 26);
-  margin-bottom: -10px;
+  color: white;
+  margin-bottom: -7px;
 }
 
 .buttom {
   font-size: 30px;
   text-shadow: 2px 2px 5px rgb(29, 26, 26);
-  margin-top: -15px;
+  color: white;
+  margin-top: -1px;
 }
 
 .back {
   padding: 10px;
+  font-family: "Zen Kurenaido", sans-serif;
+  background-color: none;
+  color: white;
+  position: fixed;
+  top: 20%;
+  left: 15%;
 }
 
 body {
@@ -41,18 +45,25 @@ body {
 }
 
 .video {
-  position: fixed;
-  right: 0%;
+  position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 
 @media (max-width: 760px) {
   .timer {
-    top: 10%;
+    top: 5% !important;
+  }
+  .head {
+    font-size: 30px !important;
+    margin-bottom: 20px;
+  }
+  .buttom {
+    font-size: 30px !important;
+    margin-top: 20px;
   }
 }
