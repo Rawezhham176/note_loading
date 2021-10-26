@@ -35,8 +35,8 @@ span {
   background-color: none;
   color: white;
   position: fixed;
-  top: 20%;
-  left: 15%;
+  top: 10%;
+  left: 10%;
 }
 
 body {
@@ -56,6 +56,7 @@ body {
 @media (max-width: 760px) {
   .back {
     top: 15% !important;
+    left: 5%;
   }
   .head {
     font-size: 30px !important;
