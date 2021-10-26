@@ -42,6 +42,9 @@ const Home = () => {
 
     return (
         <>
+                <video autoPlay loop muted className="video">
+            <source src={cava} type="video/mp4" />
+        </video>
         <div className="timer">
         <div className="back">
         <h1 className="head">We are soon online</h1>
@@ -55,9 +58,6 @@ const Home = () => {
         <h2 className="buttom">Rawezh Hama</h2>
         </div>
         </div>
-        <video autoPlay loop muted className="video">
-            <source src={cava} type="video/mp4" />
-        </video>
         </>
     )
 }
