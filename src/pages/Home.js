@@ -40,8 +40,36 @@ const Home = () => {
         }
     })
 
+   
+    const [openMenu, setOpenMenu] = useState(false)
+    const [menuStyle, setMenuStyle] = useState("none")
+
+    const clas = openMenu == true ? "open" : ""
+
+    const style = {
+        display: ""
+    }
+
+    const stl = openMenu == true ? "menuBack1" : "none"
+
+
+
     return (
         <>
+        <div className={`menuBack ${stl}`}></div>
+        <header>
+            <h1 className="headline">Future</h1>
+            <div className={`${clas} menu_btn`} onClick={() => {
+                if(openMenu){
+                    setOpenMenu(false)
+                } else {
+                    setOpenMenu(true)
+                }
+            }}>
+                <div className="menu_burge"></div>
+            </div>
+        </header>
+        
         <video autoPlay loop muted className="video">
             <source src={cava} type="video/mp4" />
         </video>

@@ -41,7 +41,6 @@ span {
 
 body {
   text-align: center;
-  font-family: "Zen Kurenaido", sans-serif;
 }
 
 .video {
@@ -56,7 +55,7 @@ body {
 
 @media (max-width: 760px) {
   .back {
-    top: 8% !important;
+    top: 15% !important;
   }
   .head {
     font-size: 30px !important;
@@ -84,4 +83,87 @@ body {
     font-size: 30px !important;
     margin-top: 10px;
   }
+}
+
+header {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.menu_btn {
+  position: relative;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.menu_burge {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: rgb(230, 230, 230);
+}
+
+.menu_burge::after,
+.menu_burge::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu_burge::after {
+  transform: translate(-15px, 15px);
+}
+
+.menu_burge::before {
+  transform: translate(-15px, -15px);
+}
+
+/* Menu Animation*/
+
+.open .menu_burge {
+  background: transparent;
+  box-shadow: none;
+}
+
+.open .menu_burge::after {
+  transform: rotate(-45deg);
+}
+
+.open .menu_burge::before {
+  transform: rotate(45deg);
+}
+
+.menuBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  float: right;
+  left: 50;
+  right: 80;
+  z-index: 1000;
+  display: none;
+}
+
+.menuBack1 {
+  display: "content";
+}
+
+.headline {
+  font-weight: bold !important;
+  cursor: pointer;
 }
