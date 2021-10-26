@@ -55,15 +55,33 @@ body {
 }
 
 @media (max-width: 760px) {
-  .timer {
-    top: 5% !important;
+  .back {
+    top: 8% !important;
   }
   .head {
     font-size: 30px !important;
-    margin-bottom: 20px;
+    margin-bottom: -5px;
   }
   .buttom {
     font-size: 30px !important;
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .timer {
+    font-size: 20vw;
+  }
+  .back {
+    top: 20% !important;
+    left: 15%;
+  }
+  .head {
+    font-size: 30px !important;
+    margin-bottom: 13px;
+  }
+  .buttom {
+    font-size: 30px !important;
+    margin-top: 10px;
   }
 }
