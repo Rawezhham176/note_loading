@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import cava from '../video/Cave-45340.mp4'
 import List from './List'
+import "../home.css"
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link
@@ -58,7 +58,6 @@ const Home = () => {
 
 
     return (
-        <Router>
         <>
         <div>
              <div style={{
@@ -77,11 +76,9 @@ const Home = () => {
                 }
             } }> 
                   <ul className="menuList">
-                    <li>Home</li>
-                    <li>
-
-                        <List /></li>
-                    <li>Contac</li>
+                    
+                    <li><List /></li>
+                    
                 </ul>
             </div>
             
@@ -125,7 +122,6 @@ const Home = () => {
             </div>
         </div>
         </>
-        </Router>
     )
 }
 
