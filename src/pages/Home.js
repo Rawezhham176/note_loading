@@ -79,8 +79,9 @@ const Home = () => {
                   <ul className="menuList">
                     <li>Home</li>
                     <li>
+
                         <List /></li>
-                    <li>Contact</li>
+                    <li>Contac</li>
                 </ul>
             </div>
             
