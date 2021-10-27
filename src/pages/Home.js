@@ -1,5 +1,14 @@
 import { useState, useRef, useEffect } from "react";
 import cava from '../video/Cave-45340.mp4'
+import List from './List'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import About from "./About";
+
 
 const Home = () => {
     const [days, setDays] = useState("00");
@@ -39,24 +48,43 @@ const Home = () => {
              clearInterval(interval.current)
         }
     })
-
    
     const [openMenu, setOpenMenu] = useState(false)
-    const [menuStyle, setMenuStyle] = useState("none")
+    const [menuBack, setMenuBack] = useState("none")
 
     const clas = openMenu == true ? "open" : ""
-
-    const style = {
-        display: ""
-    }
-
-    const stl = openMenu == true ? "menuBack1" : "none"
+    const MenuBack = openMenu ? true : false
 
 
 
     return (
+        <Router>
         <>
-        <div className={`menuBack ${stl}`}></div>
+        <div>
+             <div style={{
+            display: MenuBack ? "block" : menuBack,
+            width: "100%",
+            position: "absolute",
+            height: "100%",
+            float: "right",
+            left: "50",
+            right: "80",
+            zIndex: "100",
+            backgroundColor: "rgba(0,0,0,0.8)",
+            }} onClick={() => {
+                if(MenuBack){
+                    setOpenMenu(false)
+                }
+            } }> 
+                  <ul className="menuList">
+                    <li>Home</li>
+                    <li>
+                        <List /></li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            
+        </div>
         <header>
             <h1 className="headline">Future</h1>
             <div className={`${clas} menu_btn`} onClick={() => {
@@ -92,10 +120,11 @@ const Home = () => {
                 what you will give me as feedback.
                 You can also sign up for the trial 
                 version.
-</h2>
-</div>
+            </h2>
+            </div>
         </div>
         </>
+        </Router>
     )
 }
 
