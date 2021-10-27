@@ -85,13 +85,15 @@ const Home = () => {
         <span id="seconds">{seconds}</span>
         </div>
             <h2 className="buttom">Rawezh Hama</h2>
+            <div className="prag">
             <h2 className="paragraph">I started the development of a 
-                new platform. <br/>It should be ready in 
-                the next few weeks. <br/>I am very curious 
-                what you will give me as feedback. <br/>
+                new platform. It should be ready in 
+                the next few weeks. I am very curious 
+                what you will give me as feedback.
                 You can also sign up for the trial 
                 version.
 </h2>
+</div>
         </div>
         </>
     )

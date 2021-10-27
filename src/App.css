@@ -36,11 +36,14 @@ span {
   color: white;
   position: fixed;
   top: 10%;
-  left: 10%;
+  left: 1%;
+  text-align: center;
+  justify-content: center;
 }
 
 body {
   text-align: center;
+  justify-content: center;
 }
 
 .video {
@@ -54,27 +57,33 @@ body {
 }
 
 @media (max-width: 760px) {
+  .timer {
+    font-size: 11vw;
+  }
   .back {
-    top: 15% !important;
-    left: 5%;
+    top: 10% !important;
+    left: 1%;
   }
   .head {
-    font-size: 30px !important;
+    font-size: 25px !important;
     margin-bottom: -5px;
   }
   .buttom {
-    font-size: 30px !important;
+    font-size: 25px !important;
     margin-top: 0px;
+  }
+  .paragraph {
+    font-size: 3vw;
   }
 }
 
 @media (max-width: 500px) {
   .timer {
-    font-size: 20vw;
+    font-size: 18vw;
   }
   .back {
     top: 20% !important;
-    left: 15%;
+    left: 0%;
   }
   .head {
     font-size: 30px !important;
@@ -83,6 +92,9 @@ body {
   .buttom {
     font-size: 30px !important;
     margin-top: 10px;
+  }
+  .paragraph {
+    font-size: 5vw;
   }
 }
 
@@ -102,7 +114,7 @@ header {
   height: 50px;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 .menu_burge {
@@ -112,6 +124,7 @@ header {
   height: 4px;
   border-radius: 5px;
   background-color: rgb(230, 230, 230);
+  text-shadow: 2px 2px 5px rgb(29, 26, 26);
 }
 
 .menu_burge::after,
@@ -167,4 +180,9 @@ header {
 .headline {
   font-weight: bold !important;
   cursor: pointer;
+  text-shadow: 2px 2px 5px rgb(29, 26, 26);
+}
+
+.paragraph {
+  text-shadow: 2px 2px 5px rgb(29, 26, 26);
 }
