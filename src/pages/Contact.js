@@ -64,6 +64,7 @@ const Contact = () => {
            </div> 
         <div className="back2">
             <h1 className="name">Rawezh Hama</h1>
+            <h2 className="name_1">Click on the image to see the contact option</h2>
         </div>
         </>
     )
