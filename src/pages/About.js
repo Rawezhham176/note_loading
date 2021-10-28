@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import bike from '../video/Bike-72566.mp4'
+
 import List from './List'
 import "../about.css"
 import {
@@ -7,6 +7,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Header from "../components/Header";
+import Background from "../components/Background";
+import bike from '../video/Bike-72566.mp4'
 
 
 const About = () => {   
@@ -21,46 +24,11 @@ const About = () => {
 
     return (
         <>
-        <div>
-             <div style={{
-            display: MenuBack ? "block" : menuBack,
-            width: "100%",
-            position: "absolute",
-            height: "100%",
-            float: "right",
-            left: "50",
-            right: "80",
-            zIndex: "100",
-            backgroundColor: "rgba(0,0,0,0.8)",
-            }} onClick={() => {
-                if(MenuBack){
-                    setOpenMenu(false)
-                }
-            } }> 
-                  <ul className="menuList">
-                    
-                    <li><List /></li>
-                    
-                </ul>
-            </div>
-            
-        </div>
-        <header>
-            <h1 className="headline">Future</h1>
-            <div className={`${clas} menu_btn`} onClick={() => {
-                if(openMenu){
-                    setOpenMenu(false)
-                } else {
-                    setOpenMenu(true)
-                }
-            }}>
-                <div className="menu_burge"></div>
-            </div>
-        </header>
-        
+        <Header />
         <video autoPlay loop muted className="video">
             <source src={bike} type="video/mp4" />
         </video>
+        
     
         <div className="back1">
             <h2 className="buttom"></h2>

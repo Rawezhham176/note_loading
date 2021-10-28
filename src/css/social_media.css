@@ -1,0 +1,21 @@
+.menuListSocial {
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.menuListSocial h3 {
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.menuListSocial h3 i {
+  font-size: 90px;
+  color: white;
+}
+
+@media (max-height: 700px) {
+  .menuListSocial {
+    margin-top: 40px;
+  }
+}

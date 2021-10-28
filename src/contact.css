@@ -66,6 +66,7 @@
   height: auto;
   border-radius: 250px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+  pointer-events: all;
 }
 
 .social {
@@ -81,4 +82,9 @@
 
 .facebook {
   margin-right: 15px;
+}
+
+.rawezh_img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }

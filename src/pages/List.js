@@ -11,9 +11,9 @@ import Contact from "./Contact";
 const List = () => {
     return (
         <>
-        <h3><Link to="/">Home</Link></h3>
-        <h3><Link to="/about">About</Link></h3>
-        <h3><Link to="/contact">Contact</Link></h3>
+        <h3 className="liste"><Link to="/">Home</Link></h3>
+        <h3 className="liste"><Link to="/about">About</Link></h3>
+        <h3 className="liste"><Link to="/contact">Contact</Link></h3>
         </>
     )
 }

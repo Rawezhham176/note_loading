@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react";
-import cava from '../video/Cave-45340.mp4'
 import List from './List'
 import "../home.css"
 import {
@@ -8,6 +7,9 @@ import {
   Link
 } from "react-router-dom";
 import About from "./About";
+import Header from "../components/Header";
+import Background from "../components/Background";
+import cava from '../video/Cave-45340.mp4'
 
 
 const Home = () => {
@@ -49,56 +51,16 @@ const Home = () => {
         }
     })
    
-    const [openMenu, setOpenMenu] = useState(false)
-    const [menuBack, setMenuBack] = useState("none")
-
-    const clas = openMenu == true ? "open" : ""
-    const MenuBack = openMenu ? true : false
-
-
+   
 
     return (
         <>
-        <div>
-             <div style={{
-            display: MenuBack ? "block" : menuBack,
-            width: "100%",
-            position: "absolute",
-            height: "100%",
-            float: "right",
-            left: "50",
-            right: "80",
-            zIndex: "100",
-            backgroundColor: "rgba(0,0,0,0.8)",
-            }} onClick={() => {
-                if(MenuBack){
-                    setOpenMenu(false)
-                }
-            } }> 
-                  <ul className="menuList">
-                    
-                    <li><List /></li>
-                    
-                </ul>
-            </div>
-            
-        </div>
-        <header>
-            <h1 className="headline">Future</h1>
-            <div className={`${clas} menu_btn`} onClick={() => {
-                if(openMenu){
-                    setOpenMenu(false)
-                } else {
-                    setOpenMenu(true)
-                }
-            }}>
-                <div className="menu_burge"></div>
-            </div>
-        </header>
-        
-        <video autoPlay loop muted className="video">
+       <Header />
+       <video autoPlay loop muted className="video">
             <source src={cava} type="video/mp4" />
         </video>
+
+        
         <div className="back">
         <h1 className="head">We are soon online</h1>
         <div className="timer">
