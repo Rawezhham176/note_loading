@@ -1,0 +1,10 @@
+{
+  "newses": [
+    {
+        "id" : 1,
+        "title": "First News about the Plattform",
+        "text": "From monday I will start with the development of the platform. And every time a nice part of the platform is ready, I will share about this component here.",
+        "img": ""
+  }
+  ]
+}

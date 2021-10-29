@@ -2,10 +2,14 @@ import Header from '../components/Header'
 import '../css/news.css'
 import binary from '../video/Binary-29078.mp4'
 import VanillaTilt from 'vanilla-tilt';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Tilt from 'react-vanilla-tilt'
+import { Route } from 'react-router-dom';
+import NewsItem from '../components/News_item';
 
 const News = () => {
+
+
 
 function Tilt(props) {
   const { options, ...rest } = props;
@@ -21,9 +25,35 @@ function Tilt(props) {
  const options = {
     scale: 1.1,
     speed: 10000,
-    max: 10,
-    perspective: 1000
+    perspective: 10
   };
+
+
+    const [news, setNews] = useState([])
+
+  useEffect(() => {
+    const getNews = async () => {
+      const newsFromServer = await fetchNews()
+      setNews(newsFromServer)
+    }
+
+    getNews()
+  }, [])
+
+  // Fetch Tasks
+  const fetchNews = async () => {
+    const res = await fetch('http://localhost:8000/newses')
+    const data = await res.json()
+
+    return data
+  }
+
+  // Fetch Task
+  const fetchNewses = async (id) => {
+    const res = await fetch(`http://localhost:8000/newses/${id}`)
+    const data = await res.json()
+    return data
+  }
 
     return (
         <>
@@ -32,16 +62,24 @@ function Tilt(props) {
             <source src={binary} type="video/mp4" />
         </video>
   
-
-<Tilt options={{ scale: 1.2, max: 5 }}>
+    {
+       news.map((news, index) => 
+       <Tilt options={{ scale: 1.1, max: 5 }}>
     <div className='boxy'>
   <div className='box'>
-    <h1 style={{color: "white"}}>In next days here will be some news</h1>
+        <NewsItem key={index} news={news} />
+          </div>
   </div>
-  </div>
-</Tilt>
+  </Tilt>
+        )
+    }
+
+        <div className='someSpace'></div>
         </>
+
     )
 }
 
 export default News
+
+//         
