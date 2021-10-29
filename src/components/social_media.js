@@ -14,7 +14,7 @@ const Social = () => {
             <li><h3 className="" style={{color: "white", fontSize: "30px"}}><a href="https://www.instagram.com/rawezh_ham" ><i class="fab fa-instagram"></i></a> /rawezh_ham</h3></li>
             <li><h3 className="" style={{color: "white", fontSize: "30px"}}><a href="https://de.linkedin.com/in/rawezh-hama-404778211" ><i class="fab fa-linkedin"></i></a> /rawezh hama</h3></li>
             <li><h3 className="" style={{color: "white", fontSize: "30px"}}><a href="https://www.xing.com/profile/Rawezh_Hama2" ><i class="fab fa-xing"></i></a> /rawezh hama</h3></li>
-            <li onClick={() => { alert("rawezhhame@gmail.com")}}><h3 className=""><i class="fas fa-at"></i></h3></li>
+            <li onClick={() => { alert("Email: rawezhhame@gmail.com")}}><h3 className=""><i class="fas fa-at"></i></h3></li>
         </ul>
         </>
         

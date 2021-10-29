@@ -6,7 +6,7 @@ import '../css/header.css'
 
 const Header = () => {
 
-     const [openMenu, setOpenMenu] = useState(false)
+    const [openMenu, setOpenMenu] = useState(false)
     const [menuBack, setMenuBack] = useState("none")
 
     const clas = openMenu == true ? "open" : ""
