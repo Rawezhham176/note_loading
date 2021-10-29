@@ -67,7 +67,7 @@ function Tilt(props) {
        <Tilt options={{ scale: 1.1, max: 5 }}>
     <div className='boxy'>
   <div className='box'>
-        <NewsItem key={index} news={news} />
+        <NewsItem />
           </div>
   </div>
   </Tilt>
