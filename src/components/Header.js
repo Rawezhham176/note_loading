@@ -1,5 +1,7 @@
 import { useState } from "react"
-import List from "../pages/List"
+import { Link } from "react-router-dom"
+import List from "./List"
+import Home from "../pages/Home"
 import '../css/header.css'
 
 const Header = () => {
@@ -40,7 +42,8 @@ const Header = () => {
             
         </div>
         <header>
-            <h1 className="headline">Future</h1>
+            <h1 className="headline"><Link to={'/'}
+            style={{ textDecoration: 'none', color: 'white' }}>Future</Link></h1>
             <div className={`${clas} menu_btn`} onClick={() => {
                 if(openMenu){
                     setOpenMenu(false)

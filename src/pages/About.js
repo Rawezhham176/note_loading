@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
-import List from './List'
-import "../about.css"
+import List from '../components/List'
+import "../css/about.css"
 import {
   Switch,
   Route,

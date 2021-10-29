@@ -5,8 +5,8 @@ import instagram from "../icon/instagram-brands.svg"
 import linkedIn from "../icon/linkedin-brands.svg"
 import xing from "../icon/xing-brands.svg"
 import email from "../icon/at-solid.svg"
-import List from './List'
-import "../contact.css"
+import List from '../components/List'
+import "../css/contact.css"
 import {
   Switch,
   Route,
@@ -64,7 +64,7 @@ const Contact = () => {
            </div> 
         <div className="back2">
             <h1 className="name">Rawezh Hama</h1>
-            <h2 className="name_1">Click on the image to see the contact option</h2>
+            <h2 className="name_1">Click on the image to see the contact options</h2>
         </div>
         </>
     )

@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import List from './List'
-import "../home.css"
+import List from '../components/List'
+import "../css/home.css"
 import {
   Switch,
   Route,
@@ -72,7 +72,6 @@ const Home = () => {
         <span>:</span>
         <span id="seconds">{seconds}</span>
         </div>
-            <h2 className="buttom">Rawezh Hama</h2>
             <div className="prag">
             <h2 className="paragraph">I started the development of a 
                 new platform. It should be ready in 
@@ -82,6 +81,7 @@ const Home = () => {
                 version.
             </h2>
             </div>
+            <h2 className="buttom">Rawezh Hama</h2>
         </div>
         </>
     )
