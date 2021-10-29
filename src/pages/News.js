@@ -62,8 +62,7 @@ function Tilt(props) {
             <source src={binary} type="video/mp4" />
         </video>
   
-    {
-       news.map((news, index) => 
+
        <Tilt options={{ scale: 1.1, max: 5 }}>
     <div className='boxy'>
   <div className='box'>
@@ -71,8 +70,7 @@ function Tilt(props) {
           </div>
   </div>
   </Tilt>
-        )
-    }
+        
 
         <div className='someSpace'></div>
         </>
