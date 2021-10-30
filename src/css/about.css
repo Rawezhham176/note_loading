@@ -5,7 +5,7 @@
   font-family: "Zen Kurenaido", sans-serif;
   background-color: none;
   color: white;
-  position: fixed;
+  position: relative;
   top: 20% !important;
   left: 1%;
   text-align: center;

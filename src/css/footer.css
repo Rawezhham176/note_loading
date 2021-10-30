@@ -1,0 +1,10 @@
+footer {
+  position: absolute;
+  color: white;
+  font-weight: 900;
+  bottom: 0;
+  text-align: center;
+  left: 30%;
+  right: 30%;
+  text-shadow: 2px 2px 5px rgb(29, 26, 26);
+}

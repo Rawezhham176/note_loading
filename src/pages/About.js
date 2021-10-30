@@ -10,6 +10,7 @@ import {
 import Header from "../components/Header";
 import Background from "../components/Background";
 import bike from '../video/Bike-72566.mp4'
+import Footer from "../components/Footer";
 
 
 const About = () => {   
@@ -44,6 +45,7 @@ const About = () => {
             </h2>
             </div>
         </div>
+        <Footer />
         </>
     )
 }
