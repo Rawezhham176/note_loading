@@ -29,8 +29,10 @@ function Tilt(props) {
   };
 
 
-    const [news, setNews] = useState([])
+ 
 
+    /** 
+     *    const [news, setNews] = useState([])
   useEffect(() => {
     const getNews = async () => {
       const newsFromServer = await fetchNews()
@@ -54,6 +56,7 @@ function Tilt(props) {
     const data = await res.json()
     return data
   }
+  */
 
     return (
         <>
